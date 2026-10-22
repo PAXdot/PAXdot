@@ -15,9 +15,14 @@ jobs:
       - uses: actions/checkout@v5
       - uses: yoshi389111/github-profile-3d-contrib@latest
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PROFILE_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
           SETTING_JSON: .github/profile-3d.json
+      - name: Include private work and swap stars/forks for activity totals
+        env:
+          GITHUB_TOKEN: ${{ secrets.PROFILE_TOKEN }}
+          USERNAME: ${{ github.repository_owner }}
+        run: python3 scripts/patch_3d.py profile-3d-contrib/profile-paxdot.svg
       - name: Commit & Push
         run: |
           git config user.name github-actions
