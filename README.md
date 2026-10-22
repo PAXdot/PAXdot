@@ -37,7 +37,7 @@
 
 <br/><br/>
 
-<img src="https://raw.githubusercontent.com/PAXdot/PAXdot/output/snake.svg" alt="contribution snake" width="100%" />
+<img src="profile-3d-contrib/profile-paxdot.svg" alt="3D contribution calendar" width="100%" />
 
 </div>
 

@@ -1,0 +1,11 @@
+{
+  "type": "normal",
+  "fileName": "profile-paxdot.svg",
+  "backgroundColor": "#0a0a0f",
+  "foregroundColor": "#e6e6f0",
+  "strongColor": "#ff1e8c",
+  "weakColor": "#6b6b80",
+  "radarColor": "#00f0ff",
+  "growingAnimation": true,
+  "contribColors": ["#1c1c27", "#4a0026", "#b3005e", "#ff1e8c", "#ff5fb0"]
+}
