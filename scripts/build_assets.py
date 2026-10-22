@@ -176,11 +176,11 @@ def neofetch():
 
     info = [
         ("OS", "Linux · Debian 12 · always SSH'd in"),
-        ("Host", "Compass Solutions"),
+        ("Host", "Compass Solutions · US-based agency"),
         ("Role", "Full-Stack Developer"),
         ("Uptime", "on GitHub since 2022"),
         ("Shell", "bash + way too many cron jobs"),
-        ("Languages", "TypeScript · JavaScript · Kotlin · SQL"),
+        ("Languages", "TypeScript · JavaScript · Python · Kotlin · SQL"),
         ("Frontend", "Next.js · React · Tailwind · Three.js"),
         ("Backend", "Node.js · Express · Prisma"),
         ("Data", "PostgreSQL · SQLite · Supabase"),

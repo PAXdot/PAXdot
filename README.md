@@ -6,8 +6,8 @@
 
 <a href="https://compasssolutions.io"><img src="https://img.shields.io/badge/compasssolutions.io-0a0a0f?style=for-the-badge&logo=googlechrome&logoColor=ff1e8c&labelColor=0a0a0f&color=0a0a0f" alt="Website" /></a>
 <img src="https://img.shields.io/badge/role-full--stack-ff1e8c?style=for-the-badge&labelColor=0a0a0f" alt="Role" />
+<img src="https://img.shields.io/badge/agency-USA-ff1e8c?style=for-the-badge&labelColor=0a0a0f" alt="Agency" />
 <img src="https://img.shields.io/badge/timezone-UTC--3-ff1e8c?style=for-the-badge&labelColor=0a0a0f" alt="Timezone" />
-<img src="https://komarev.com/ghpvc/?username=PAXdot&style=for-the-badge&color=ff1e8c&labelColor=0a0a0f&label=VISITORS" alt="Visitors" />
 
 </div>
 
@@ -25,13 +25,7 @@
 
 <div align="center">
 
-<img src="https://skillicons.dev/icons?i=ts,js,kotlin,html,css,bash&theme=dark" alt="languages" />
-<br/>
-<img src="https://skillicons.dev/icons?i=nextjs,react,vite,tailwind,threejs&theme=dark" alt="frontend" />
-<br/>
-<img src="https://skillicons.dev/icons?i=nodejs,express,prisma,postgres,sqlite,supabase&theme=dark" alt="backend" />
-<br/>
-<img src="https://skillicons.dev/icons?i=androidstudio,linux,debian,nginx,githubactions,git&theme=dark" alt="infra" />
+<img src="https://skillicons.dev/icons?i=ts,js,py,kotlin,html,css,nextjs,react,vite,tailwind,threejs,nodejs,express,prisma,postgres,sqlite,supabase,androidstudio,linux,debian,nginx,githubactions,git,bash&perline=12&theme=dark" alt="stack" width="88%" />
 
 </div>
 
