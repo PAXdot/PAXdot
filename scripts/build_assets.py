@@ -228,10 +228,56 @@ def neofetch():
 """
 
 
+def about():
+    items = [
+        ("BUSINESS SYSTEMS", "custom CRMs, invoicing, scheduling and reporting built around real operations"),
+        ("MOBILE", "native Android apps in Kotlin that put field teams on the same backend"),
+        ("AUTOMATION", "bots, scrapers and cron jobs that watch, notify and do the boring work"),
+        ("WEB", "fast multilingual sites designed to load instantly and convert"),
+        ("INFRA", "Linux, Nginx, PM2, CI/CD, monitoring and backups. I deploy what I build"),
+    ]
+    W, top, row = 1000, 98, 58
+    H = top + len(items) * row + 62
+    rows = []
+    for i, (title, desc) in enumerate(items):
+        y = top + i * row
+        delay = 0.25 + i * 0.15
+        rows.append(
+            f'<g class="l" style="animation-delay:{delay:.2f}s">'
+            f'<rect x="34" y="{y}" width="3" height="{row - 18}" fill="{PINK}"/>'
+            f'<text x="52" y="{y + 26}" fill="{PINK}" font-weight="700">[{i + 1:02d}]</text>'
+            f'<text x="110" y="{y + 26}" fill="#ffffff" font-weight="700">{escape(title)}</text>'
+            f'<text x="290" y="{y + 26}" fill="{TEXT}">{escape(desc)}</text>'
+            + (f'<line x1="52" y1="{y + row - 9}" x2="{W - 34}" y2="{y + row - 9}" stroke="#21262d" stroke-dasharray="3 5"/>'
+               if i < len(items) - 1 else "")
+            + "</g>"
+        )
+    return f"""<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}">
+<style>
+  .t {{ font-family: {MONO}; font-size: 14px; }}
+  .l {{ animation: in .4s ease-out both; }}
+  .cur {{ animation: blink 1s infinite steps(1); }}
+  @keyframes in {{ from {{opacity:0; transform:translateX(-8px)}} to {{opacity:1; transform:none}} }}
+  @keyframes blink {{ 0%,49% {{opacity:1}} 50%,100% {{opacity:0}} }}
+</style>
+<rect x="1" y="1" width="{W - 2}" height="{H - 2}" rx="12" fill="#0d1117" stroke="#30363d"/>
+<path d="M1 13 a12 12 0 0 1 12 -12 H{W - 13} a12 12 0 0 1 12 12 V38 H1 Z" fill="#161b22"/>
+<circle cx="24" cy="20" r="6" fill="#ff5f57"/><circle cx="44" cy="20" r="6" fill="#febc2e"/><circle cx="64" cy="20" r="6" fill="#28c840"/>
+<text class="t" x="{W / 2}" y="25" text-anchor="middle" fill="{DIM}" font-size="13">~/about.txt</text>
+<g class="t">
+<text x="34" y="72"><tspan fill="{PINK}" font-weight="700">paxdot@compass</tspan><tspan fill="{TEXT}">:~$&#160;</tspan><tspan fill="#ffffff">cat about.txt</tspan></text>
+{''.join(rows)}
+<text x="34" y="{H - 24}"><tspan fill="{PINK}" font-weight="700">paxdot@compass</tspan><tspan fill="{TEXT}">:~$&#160;</tspan><tspan class="cur" fill="{PINK}">&#9608;</tspan></text>
+</g>
+</svg>
+"""
+
+
 def main():
     ASSETS.mkdir(exist_ok=True)
     (ASSETS / "banner.svg").write_text(banner())
     (ASSETS / "neofetch.svg").write_text(neofetch())
+    (ASSETS / "about.svg").write_text(about())
     print("wrote", ", ".join(p.name for p in ASSETS.glob("*.svg")))
 
 

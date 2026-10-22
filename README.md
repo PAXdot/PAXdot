@@ -17,31 +17,9 @@
 
 <br/>
 
-<h3 align="center"><code>paxdot@compass:~$ cat about.txt</code></h3>
+<img src="assets/about.svg" alt="about" width="100%" />
 
-```text
- ┌───────────────────────────────────────────────────────────────────┐
- │                                                                   │
- │   [01]  BUSINESS SYSTEMS   custom CRMs, invoicing, scheduling,    │
- │                            inventory and reporting that fit how   │
- │                            each company actually works            │
- │                                                                   │
- │   [02]  MOBILE             native Android apps in Kotlin that     │
- │                            put field teams on the same backend    │
- │                                                                   │
- │   [03]  AUTOMATION         bots, scrapers and scheduled jobs      │
- │                            that watch, notify and do the boring   │
- │                            work so humans don't have to           │
- │                                                                   │
- │   [04]  WEB                fast multilingual sites built to       │
- │                            convert                                │
- │                                                                   │
- │   [05]  INFRA              Linux boxes, Nginx, PM2, CI/CD,        │
- │                            monitoring and backups. I deploy       │
- │                            and babysit everything I build         │
- │                                                                   │
- └───────────────────────────────────────────────────────────────────┘
-```
+<br/>
 
 <h3 align="center"><code>paxdot@compass:~$ ls ~/stack</code></h3>
 
