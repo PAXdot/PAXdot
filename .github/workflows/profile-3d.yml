@@ -22,7 +22,9 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.PROFILE_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
-        run: python3 scripts/patch_3d.py profile-3d-contrib/profile-paxdot.svg
+        run: |
+          python3 scripts/patch_3d.py profile-3d-contrib/profile-paxdot.svg
+          python3 scripts/build_streak.py profile-3d-contrib/streak.svg
       - name: Commit & Push
         run: |
           git config user.name github-actions

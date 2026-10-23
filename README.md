@@ -29,13 +29,13 @@
 
 </div>
 
-<h3 align="center"><code>paxdot@compass:~$ ./streak --live</code></h3>
+<br/>
+
+<img src="profile-3d-contrib/streak.svg" alt="streak" width="100%" />
+
+<h3 align="center"><code>paxdot@compass:~$ ./contrib --3d</code></h3>
 
 <div align="center">
-
-<img src="https://streak-stats.demolab.com?user=PAXdot&background=0A0A0F&border=FF1E8C&stroke=4A0026&ring=FF1E8C&fire=FF1E8C&currStreakNum=FFFFFF&sideNums=FFFFFF&currStreakLabel=FF1E8C&sideLabels=FF1E8C&dates=6E7681&border_radius=12" alt="streak" width="80%" />
-
-<br/><br/>
 
 <img src="profile-3d-contrib/profile-paxdot.svg" alt="3D contribution calendar" width="100%" />
 
