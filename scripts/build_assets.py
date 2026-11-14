@@ -56,10 +56,18 @@ def figlet_shapes(text, x0, y0, cw, ch):
 
 def banner():
     W, H = 1000, 320
+    word = "VINSTROOM"
     cw, ch = 17, 26
-    _, _, art_w, art_h = figlet_shapes("PAXDOT", 0, 0, cw, ch)
-    x0, y0 = (W - art_w) / 2, 62
-    rects, paths, _, _ = figlet_shapes("PAXDOT", x0, y0, cw, ch)
+    _, _, art_w, art_h = figlet_shapes(word, 0, 0, cw, ch)
+    max_w = W - 96
+    if art_w > max_w:
+        scale = max_w / art_w
+        cw *= scale
+        ch *= scale
+        _, _, art_w, art_h = figlet_shapes(word, 0, 0, cw, ch)
+    x0 = (W - art_w) / 2
+    y0 = max(52, (H - art_h - 78) / 2)
+    rects, paths, _, _ = figlet_shapes(word, x0, y0, cw, ch)
     sub_y = y0 + art_h + 48
     return f"""<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}">
 <defs>
@@ -105,7 +113,7 @@ def banner():
   <text class="t" x="{W / 2}" y="{sub_y}" text-anchor="middle" font-size="20" fill="{TEXT}">
     <tspan fill="{PINK}">&gt;</tspan> full-stack developer <tspan fill="{PINK}">//</tspan> compass solutions <tspan class="cur" fill="{PINK}">&#9608;</tspan>
   </text>
-  <text class="t" x="24" y="30" font-size="12" fill="{DIM}">[ SYS://PAXDOT ]</text>
+  <text class="t" x="24" y="30" font-size="12" fill="{DIM}">[ SYS://VINSTROOM ]</text>
   <text class="t" x="{W - 24}" y="30" font-size="12" fill="{DIM}" text-anchor="end">BUILD 2026.10 · UTC-3</text>
   <circle class="cur" cx="30" cy="{H - 26}" r="4" fill="{PINK}"/>
   <text class="t" x="42" y="{H - 22}" font-size="12" fill="{DIM}">STATUS: <tspan fill="{PINK}">ONLINE</tspan></text>
@@ -192,7 +200,7 @@ def neofetch():
     ]
     ix, iy, step = 455, 112, 22
     lines = [
-        f'<text x="{ix}" y="{iy}" class="l" style="animation-delay:.2s"><tspan fill="{PINK}" font-weight="700">paxdot</tspan><tspan fill="{TEXT}">@</tspan><tspan fill="{PINK}" font-weight="700">compass</tspan></text>',
+        f'<text x="{ix}" y="{iy}" class="l" style="animation-delay:.2s"><tspan fill="{PINK}" font-weight="700">vinstroom</tspan><tspan fill="{TEXT}">@</tspan><tspan fill="{PINK}" font-weight="700">compass</tspan></text>',
         f'<text x="{ix}" y="{iy + step}" class="l" style="animation-delay:.3s" fill="{DIM}">──────────────────────</text>',
     ]
     for i, (key, value) in enumerate(info, start=2):
@@ -219,11 +227,11 @@ def neofetch():
 <rect x="1" y="1" width="{W - 2}" height="{H - 2}" rx="12" fill="#0d1117" stroke="#30363d"/>
 <path d="M1 13 a12 12 0 0 1 12 -12 H{W - 13} a12 12 0 0 1 12 12 V38 H1 Z" fill="#161b22"/>
 <circle cx="24" cy="20" r="6" fill="#ff5f57"/><circle cx="44" cy="20" r="6" fill="#febc2e"/><circle cx="64" cy="20" r="6" fill="#28c840"/>
-<text class="t" x="{W / 2}" y="25" text-anchor="middle" fill="{DIM}" font-size="13">paxdot@compass: ~</text>
-<text class="t" x="34" y="72"><tspan fill="{PINK}" font-weight="700">paxdot@compass</tspan><tspan fill="{TEXT}">:~$&#160;</tspan><tspan fill="#ffffff">neofetch</tspan></text>
+<text class="t" x="{W / 2}" y="25" text-anchor="middle" fill="{DIM}" font-size="13">vinstroom@compass: ~</text>
+<text class="t" x="34" y="72"><tspan fill="{PINK}" font-weight="700">vinstroom@compass</tspan><tspan fill="{TEXT}">:~$&#160;</tspan><tspan fill="#ffffff">neofetch</tspan></text>
 <g class="a">{''.join(avatar)}</g>
 <g class="t">{''.join(lines)}{swatches}</g>
-<text class="t" x="34" y="{H - 24}"><tspan fill="{PINK}" font-weight="700">paxdot@compass</tspan><tspan fill="{TEXT}">:~$&#160;</tspan><tspan class="cur" fill="{PINK}">&#9608;</tspan></text>
+<text class="t" x="34" y="{H - 24}"><tspan fill="{PINK}" font-weight="700">vinstroom@compass</tspan><tspan fill="{TEXT}">:~$&#160;</tspan><tspan class="cur" fill="{PINK}">&#9608;</tspan></text>
 </svg>
 """
 
@@ -265,9 +273,9 @@ def about():
 <circle cx="24" cy="20" r="6" fill="#ff5f57"/><circle cx="44" cy="20" r="6" fill="#febc2e"/><circle cx="64" cy="20" r="6" fill="#28c840"/>
 <text class="t" x="{W / 2}" y="25" text-anchor="middle" fill="{DIM}" font-size="13">~/about.txt</text>
 <g class="t">
-<text x="34" y="72"><tspan fill="{PINK}" font-weight="700">paxdot@compass</tspan><tspan fill="{TEXT}">:~$&#160;</tspan><tspan fill="#ffffff">cat about.txt</tspan></text>
+<text x="34" y="72"><tspan fill="{PINK}" font-weight="700">vinstroom@compass</tspan><tspan fill="{TEXT}">:~$&#160;</tspan><tspan fill="#ffffff">cat about.txt</tspan></text>
 {''.join(rows)}
-<text x="34" y="{H - 24}"><tspan fill="{PINK}" font-weight="700">paxdot@compass</tspan><tspan fill="{TEXT}">:~$&#160;</tspan><tspan class="cur" fill="{PINK}">&#9608;</tspan></text>
+<text x="34" y="{H - 24}"><tspan fill="{PINK}" font-weight="700">vinstroom@compass</tspan><tspan fill="{TEXT}">:~$&#160;</tspan><tspan class="cur" fill="{PINK}">&#9608;</tspan></text>
 </g>
 </svg>
 """
@@ -275,9 +283,9 @@ def about():
 
 def main():
     ASSETS.mkdir(exist_ok=True)
-    (ASSETS / "banner.svg").write_text(banner())
-    (ASSETS / "neofetch.svg").write_text(neofetch())
-    (ASSETS / "about.svg").write_text(about())
+    (ASSETS / "banner.svg").write_text(banner(), encoding="utf-8")
+    (ASSETS / "neofetch.svg").write_text(neofetch(), encoding="utf-8")
+    (ASSETS / "about.svg").write_text(about(), encoding="utf-8")
     print("wrote", ", ".join(p.name for p in ASSETS.glob("*.svg")))
 
 

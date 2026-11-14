@@ -120,21 +120,21 @@ def render(total, days):
 <circle cx="24" cy="20" r="6" fill="#ff5f57"/><circle cx="44" cy="20" r="6" fill="#febc2e"/><circle cx="64" cy="20" r="6" fill="#28c840"/>
 <text class="t" x="{W / 2}" y="25" text-anchor="middle" fill="{DIM}" font-size="13">~/streak.log</text>
 <g class="t">
-<text x="34" y="72"><tspan fill="{PINK}" font-weight="700">paxdot@compass</tspan><tspan fill="{TEXT}">:~$</tspan><tspan fill="#ffffff" dx="9">./streak --live</tspan></text>
+<text x="34" y="72"><tspan fill="{PINK}" font-weight="700">vinstroom@compass</tspan><tspan fill="{TEXT}">:~$</tspan><tspan fill="#ffffff" dx="9">./streak --live</tspan></text>
 {boxes}
 <text x="34" y="250" class="l" style="animation-delay:.5s"><tspan fill="{PINK}" font-weight="700">&gt;</tspan><tspan fill="{TEXT}" dx="9">last 30 days</tspan><tspan fill="{DIM}" dx="14">·</tspan><tspan fill="{DIM}" dx="14">{week} this week</tspan><tspan fill="{DIM}" dx="14">·</tspan><tspan fill="{DIM}" dx="14">peak {peak}/day</tspan></text>
 <line x1="{left}" y1="{base + 1}" x2="{right}" y2="{base + 1}" stroke="#21262d"/>
 {''.join(bars)}
 <text x="{left}" y="{base + 20}" fill="{DIM}" font-size="11">{short(recent[0]['date'])}</text>
 <text x="{right}" y="{base + 20}" fill="{DIM}" font-size="11" text-anchor="end">today</text>
-<text x="34" y="{H - 24}"><tspan fill="{PINK}" font-weight="700">paxdot@compass</tspan><tspan fill="{TEXT}">:~$</tspan><tspan class="cur" fill="{PINK}" dx="9">&#9608;</tspan></text>
+<text x="34" y="{H - 24}"><tspan fill="{PINK}" font-weight="700">vinstroom@compass</tspan><tspan fill="{TEXT}">:~$</tspan><tspan class="cur" fill="{PINK}" dx="9">&#9608;</tspan></text>
 </g>
 </svg>
 """
 
 
 def main():
-    total, days = calendar(os.environ.get("USERNAME", "PAXdot"), os.environ["GITHUB_TOKEN"])
+    total, days = calendar(os.environ.get("USERNAME", "Vinstroom"), os.environ["GITHUB_TOKEN"])
     with open(sys.argv[1], "w", encoding="utf-8") as fh:
         fh.write(render(total, days))
 

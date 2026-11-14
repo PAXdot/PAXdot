@@ -194,7 +194,7 @@ def main():
     path = sys.argv[1]
     root = ET.parse(path).getroot()
     period = next(t.text for t in root.iter(Q("text")) if t.text and re.match(r"\d{4}-\d\d-\d\d / ", t.text))
-    stats = collect(os.environ.get("USERNAME", "PAXdot"), os.environ["GITHUB_TOKEN"], period[:10])
+    stats = collect(os.environ.get("USERNAME", "Vinstroom"), os.environ["GITHUB_TOKEN"], period[:10])
 
     pie_y = HEIGHT - PIE_HEIGHT - 70
     pie = next(g for g in root.iter(Q("g")) if g.get("transform") == f"translate(40, {fmt(pie_y)})")

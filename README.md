@@ -1,8 +1,8 @@
 <div align="center">
 
-<img src="assets/banner.svg" alt="PAXDOT" width="100%" />
+<img src="assets/banner.svg" alt="VINSTROOM" width="100%" />
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&duration=2600&pause=900&color=FF1E8C&center=true&vCenter=true&width=720&lines=%3E+booting+paxdot.sys+...+%5BOK%5D;%3E+loading+CRMs%2C+bots+%26+automations+...+%5BOK%5D;%3E+deploying+from+database+to+prod+...+%5BOK%5D;%3E+status%3A+shipping+while+you+sleep_" alt="boot sequence" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&duration=2600&pause=900&color=FF1E8C&center=true&vCenter=true&width=720&lines=%3E+booting+vinstroom.sys+...+%5BOK%5D;%3E+loading+CRMs%2C+bots+%26+automations+...+%5BOK%5D;%3E+deploying+from+database+to+prod+...+%5BOK%5D;%3E+status%3A+shipping+while+you+sleep_" alt="boot sequence" />
 
 <a href="https://compasssolutions.io"><img src="https://img.shields.io/badge/compasssolutions.io-0a0a0f?style=for-the-badge&logo=googlechrome&logoColor=ff1e8c&labelColor=0a0a0f&color=0a0a0f" alt="Website" /></a>
 <img src="https://img.shields.io/badge/role-full--stack-ff1e8c?style=for-the-badge&labelColor=0a0a0f" alt="Role" />
@@ -21,7 +21,7 @@
 
 <br/>
 
-<h3 align="center"><code>paxdot@compass:~$ ls ~/stack</code></h3>
+<h3 align="center"><code>vinstroom@compass:~$ ls ~/stack</code></h3>
 
 <div align="center">
 
@@ -33,20 +33,20 @@
 
 <img src="profile-3d-contrib/streak.svg" alt="streak" width="100%" />
 
-<h3 align="center"><code>paxdot@compass:~$ ./contrib --3d</code></h3>
+<h3 align="center"><code>vinstroom@compass:~$ ./contrib --3d</code></h3>
 
 <div align="center">
 
-<img src="profile-3d-contrib/profile-paxdot.svg" alt="3D contribution calendar" width="100%" />
+<img src="profile-3d-contrib/profile-vinstroom.svg" alt="3D contribution calendar" width="100%" />
 
 </div>
 
-<h3 align="center"><code>paxdot@compass:~$ exit</code></h3>
+<h3 align="center"><code>vinstroom@compass:~$ exit</code></h3>
 
 <div align="center">
 
 <a href="https://compasssolutions.io"><img src="https://img.shields.io/badge/WEBSITE-compasssolutions.io-ff1e8c?style=for-the-badge&labelColor=0a0a0f" alt="Website" /></a>
-<a href="https://github.com/PAXdot"><img src="https://img.shields.io/badge/GITHUB-PAXdot-ff1e8c?style=for-the-badge&logo=github&logoColor=white&labelColor=0a0a0f" alt="GitHub" /></a>
+<a href="https://github.com/Vinstroom"><img src="https://img.shields.io/badge/GITHUB-Vinstroom-ff1e8c?style=for-the-badge&logo=github&logoColor=white&labelColor=0a0a0f" alt="GitHub" /></a>
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0a0a0f,50:4a0026,100:ff1e8c&height=120&section=footer" width="100%" alt="" />
 
