@@ -183,7 +183,6 @@ def neofetch():
             )
 
     info = [
-        ("OS", "Linux · Debian 12 · always SSH'd in"),
         ("Host", "Compass Solutions · US-based agency"),
         ("Role", "Full-Stack Developer"),
         ("Uptime", "on GitHub since 2022"),
@@ -242,7 +241,7 @@ def about():
         ("MOBILE", "native Android apps in Kotlin that put field teams on the same backend"),
         ("AUTOMATION", "bots, scrapers and cron jobs that watch, notify and do the boring work"),
         ("WEB", "fast multilingual sites designed to load instantly and convert"),
-        ("INFRA", "Linux, Nginx, PM2, CI/CD, monitoring and backups. I deploy what I build"),
+        ("INFRA", "CI/CD, monitoring and backups. I deploy what I build"),
     ]
     W, top, row = 1000, 98, 58
     H = top + len(items) * row + 62

@@ -25,7 +25,7 @@
 
 <div align="center">
 
-<img src="https://skillicons.dev/icons?i=ts,js,py,kotlin,html,css,nextjs,react,vite,tailwind,threejs,nodejs,express,prisma,postgres,sqlite,supabase,androidstudio,linux,debian,nginx,githubactions,git,bash&perline=12&theme=dark" alt="stack" width="88%" />
+<img src="https://skillicons.dev/icons?i=ts,js,py,kotlin,html,css,nextjs,react,vite,tailwind,threejs,nodejs,express,prisma,postgres,sqlite,supabase,androidstudio,nginx,githubactions,git,bash&perline=12&theme=dark" alt="stack" width="88%" />
 
 </div>
 
